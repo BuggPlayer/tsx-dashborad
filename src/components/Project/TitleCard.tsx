@@ -2,7 +2,7 @@ import React from "react";
 
 const TitleCard = () => {
   return (
-    <div className="px-10 py-4 mt-8">
+    <div className="mt-8">
       <div className="flex justify-between items-center">
         <h2 className="font-inter text-2xl">Projects</h2>
         <div className=" flex space-x-4">

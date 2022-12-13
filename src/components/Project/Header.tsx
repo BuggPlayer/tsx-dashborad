@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/images/Vector.svg";
+import logo from "../../assets/images/logo.svg";
 import Avatar from "../../assets/images/Avatar.svg";
 import bellIcon from "../../assets/images/Bellicon.svg";
 import searchIcon from "../../assets/images/searchIcon.svg";
@@ -12,30 +12,27 @@ import {
 
 const Header = () => {
   return (
-    <div className="border border-lightGrayColor bg-white shadow-lg px-10 py-4  flex  justify-between items-center">
+    <div className=" h-16 bg-white shadow-sm	shadow-black-500/60 px-10  flex  justify-between items-center">
       <div className="flex space-x-2 items-center">
-        <img src={logo} alt="logo" className="inline-block" />
-        <h1 className="text-textBlack font-inter font-bold text-2xl">
-          KELLTON
-        </h1>
-        <ul className="flex  flex-1 ml-10 text-sm font-inter text-lightGrayColor  space-x-6 ">
-          <li className="ml-10 cursor-pointer hover:text-blackColor hover:border-b-2 hover:border-blueColor">
-            Dashboard
+        <img src={logo} alt="logo" className=" " /> 
+        <ul className="flex h-16 font-medium	 flex-1 ml-10 text-sm font-inter text-lightGrayColor  space-x-6 ">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
+           <a href="#">Dashboard</a> 
           </li>
-          <li className="cursor-pointer  hover:border-b-2 hover:border-blueColor hover:text-blackColor">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
             Utilization
           </li>
 
-          <li className="cursor-pointer hover:text-blackColor  hover:border-b-2 hover:border-blueColor">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
             People
           </li>
-          <li className="cursor-pointer hover:text-blackColor hover:border-b-2 hover:border-blueColor">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
             Projects
           </li>
-          <li className="cursor-pointer hover:text-blackColor hover:border-b-2 hover:border-blueColor">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
             Revenue
           </li>
-          <li className="cursor-pointer hover:text-blackColor hover:border-b-2 hover:border-blueColor">
+          <li className="ml-10 flex items-center cursor-pointer   hover:text-blackColor border-b-2 border-transparent hover:border-blueColor">
             Reports
           </li>
         </ul>

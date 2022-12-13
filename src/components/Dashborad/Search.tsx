@@ -17,15 +17,13 @@ const Search = () => {
         <BiSearch size={22} style={{ color: "gray" }} />
         <input
           className="
-         p-1
+          p-1
           border-none 
           outline-none
           text-sm 
-
-           placeholder:text-gray 
-           placeholder:text-sm 
-
-         w-full
+          placeholder:text-gray 
+          placeholder:text-sm 
+          w-full
       "
           placeholder="Search"
         />

@@ -10,7 +10,7 @@ import {
 } from "@heroicons/react/24/outline";
 const DateQuater = () => {
   return (
-    <div className="py-4 mt-8 ">
+    <div className=" mt-8 ">
       <div className="flex justify-between items-center">
         <h2 className="font-medium text-gray text-lg">This week: 11-15 Sep 2022</h2>
 
@@ -37,17 +37,11 @@ const DateQuater = () => {
             >
               <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
                 <div className="px-1 py-1 ">
-                  <Menu.Item>
-                    <button>Edit</button>
-                  </Menu.Item>
-                  <Menu.Item>
+                  <Menu.Item> 
                     <button>Edit</button>
                   </Menu.Item>
                 </div>
-                <Menu.Item>
-                  <button>Edit</button>
-                </Menu.Item>
-                <Menu.Item>
+                <Menu.Item> 
                   <button>Edit</button>
                 </Menu.Item>
               </Menu.Items>

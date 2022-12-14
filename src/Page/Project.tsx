@@ -9,10 +9,10 @@ const Project = () => {
   return (
     <div className="">
       <Header />
-      <div className="px-10 py-4">
+      <div className="px-10 py-8 bg-gray-50">
         <TitleCard />
         <DateQuater />
-        <div className="mt-5 flex justify-between">
+        <div className="mt-8 flex justify-between">
           {[1, 2, 3, 4].map((item) => (
             <CardwithIcon />
           ))}

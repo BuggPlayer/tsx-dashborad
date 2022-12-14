@@ -2,9 +2,9 @@ import React from "react";
 
 const TitleCard = () => {
   return (
-    <div className="mt-8">
+    <div className="">
       <div className="flex justify-between items-center">
-        <h2 className="font-inter text-2xl">Projects</h2>
+        <h2 className="font-inter text-2xl font-semibold leading-8	text-gray-900">Projects</h2>
         <div className=" flex space-x-4">
           <button className="bg-blue-100 flex items-center justify-center space-x-2 font-medium p-2 w-36 text-blueColor rounded-md">
             <svg

@@ -3,12 +3,7 @@
 @tailwind utilities;
 
 
-@layer base{
 
-}
-.border-radius-6{
-    border-radius: 6px;
-}
 body {
   margin: 0;
   padding: 0;

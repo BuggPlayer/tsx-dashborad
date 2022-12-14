@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
+    fontFamily: {
+      inter: ['"Inter"', 'sans-serif']
+    },
     extend: {
       screens: {
         sm: "480px",
@@ -9,9 +12,7 @@ module.exports = {
         lg: "976px",
         xl: "1440px",
       },
-      fontFamily: {
-        inter: ["Inter", "sans - serif"],
-      },
+
       colors: {
         blueColor: "#4F46E5",
         bgColor: "#EDEDED",

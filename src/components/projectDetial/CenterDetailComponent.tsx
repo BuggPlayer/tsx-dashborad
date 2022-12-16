@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState }  from "react";
 import ProjectTable from "../Project/ProjectTable";
+import Modal from "../../components/Modal/Modal"
 
 const CenterDetailComponent = () => {
+
+  const [modal, setModal] = useState(false);
+
+    const toogleModal =()=> {
+        setModal(!modal)
+    }
   const rowsData = [
     {
       id: 1,
@@ -113,7 +120,7 @@ const CenterDetailComponent = () => {
             Team Members
           </p>
 
-          <button className=" flex justify-center items-center gap-2.5 border shadow-sm rounded-md py-2.5 px-4 bg-white">
+          <button className=" flex justify-center items-center gap-2.5 border shadow-sm rounded-md py-2.5 px-4 bg-white" onClick={toogleModal}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -136,6 +143,7 @@ const CenterDetailComponent = () => {
 
         <ProjectTable rows={rowsData} colums={headernameData} />
       </div>
+      <Modal open={modal}/>
     </div>
   );
 };

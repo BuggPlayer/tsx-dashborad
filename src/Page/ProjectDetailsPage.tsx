@@ -2,6 +2,7 @@ import React from "react";
 import calender from "../assets/images/Calender.svg";
 import ProjectManagmenCard from "../components/projectDetial/ProjectManagmenCard";
 import TechCard from "../components/projectDetial/TechCard";
+import Modal from "../components/Modal/Modal";
 // import { BriefcaseIcon } from "@heroicons/react/24/outline";
 const ProjectDetailsPage = () => {
   return (
@@ -157,6 +158,7 @@ const ProjectDetailsPage = () => {
          
         </div>
         <TechCard />
+        <Modal/>
       </aside>
     </>
   );

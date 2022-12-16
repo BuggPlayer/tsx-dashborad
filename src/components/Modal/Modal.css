@@ -29,7 +29,7 @@ body.active-modal {
     transform: translate(-50%, -50%);
     line-height: 1.4;
     border-radius: 3px;
-    max-width: 784px;
+    width: 784px;
     min-width: 300px;
 }
 
@@ -51,4 +51,20 @@ body.active-modal {
     top: 10px;
     right: 10px;
     padding: 5px 7px;
+}
+
+.date input::-webkit-datetime-edit-year-field:not([aria-valuenow]),
+.date input::-webkit-datetime-edit-month-field:not([aria-valuenow]),
+.date input::-webkit-datetime-edit-day-field:not([aria-valuenow]) {
+    color: transparent;
+}
+
+.detail {
+    width: 289px;
+}
+.date{
+    width: 110px;
+}
+.estimation{
+    width: 95px;
 }

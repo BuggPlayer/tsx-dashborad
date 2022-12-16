@@ -1,4 +1,3 @@
-
 import CardwithIcon from "../components/Project/CardwithIcon";
 import DateQuater from "../components/Project/DateQuater";
 import Header from "../components/Project/Header";
@@ -6,6 +5,93 @@ import ProjectTable from "../components/Project/ProjectTable";
 import TitleCard from "../components/Project/TitleCard";
 import searchIcon from "../assets/images/Search.svg";
 const Project = () => {
+  const rowsData = [
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+    {
+      id: 1,
+      project: "DUpoint engagment ",
+      type: "TM",
+      account: "CRM",
+      geo: "EUROP",
+      countary: "USA-india",
+      prm: "Name",
+      pm: "Name",
+      accManager: "jabco jones",
+      remaingBudget: "50%",
+    },
+  ];
+  const headernameData = [
+    {
+      col1: "PROJECT",
+      col2: "TYPE",
+      col3: "ACCOUNT",
+      col4: "GEO",
+      col5: "COUNTARY",
+      col6: "PRM",
+      col7: "PM",
+      col8: "ACC MANAGER",
+      col9: "REMAING BUDGET",
+    },
+  ];
   return (
     <div className="">
       <Header />
@@ -49,7 +135,7 @@ const Project = () => {
             </button>
           ))}
         </div>
-        <div className="mt-10">
+        <div className="mt-10 mb-10">
           <div className="flex  gap-3">
             <div className="w-1/5">
               <label className="text-sm mb-1 block leading-5 font-medium">
@@ -111,7 +197,8 @@ const Project = () => {
             </div>
           </div>
         </div>
-        <ProjectTable />
+
+        <ProjectTable rows={rowsData} colums={headernameData} />
       </div>
     </div>
   );

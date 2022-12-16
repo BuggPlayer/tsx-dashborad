@@ -18,7 +18,6 @@ module.exports = {
         bgColor: "#EDEDED",
         greenColor: "#059669",
         lightGrayColor: "#6B7280",
-
         blackColor: "#111827",
         textBlack: "#414042",
         lightbtncolor: "#EEF2FF",

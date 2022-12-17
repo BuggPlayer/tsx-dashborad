@@ -6,6 +6,7 @@ import ProjectManagmenCard from "../components/projectDetial/ProjectManagmenCard
 import RightsideComponent from "../components/projectDetial/RightsideComponent";
 import SimpleHeader from "../components/projectDetial/SimpleHeader";
 import TechCard from "../components/projectDetial/TechCard";
+import Modal from "../components/Modal/Modal";
 // import { BriefcaseIcon } from "@heroicons/react/24/outline";
 const ProjectDetailsPage = () => {
   return (
@@ -168,6 +169,7 @@ const ProjectDetailsPage = () => {
           <CenterDetailComponent />
         </div>
         <RightsideComponent />
+
       </div>
     </>
   );

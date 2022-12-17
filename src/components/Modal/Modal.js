@@ -8,7 +8,7 @@ const Modal = (props) => {
   return (
     <>
       {props.open && (
-        <div className="modal">
+        <div className="modal ">
           <div className="overlay"></div>
           <div className="modal-content bg-white rounded-lg overflow-hidden">
             <div className="px-8 py-7 flex items-center justify-between ">
@@ -39,15 +39,20 @@ const Modal = (props) => {
               </p>
             </div>
 
-            <div className="p-8">
-              <div className="flex gap-3 items-center justify-between">
-                <div className="detail flex-col">
-                  <label class="text-sm text-gray-700 leading-5 font-medium">
+            <div className="p-8 ">
+              <div className="flex gap-6 items-center justify-between">
+                <div className=" w-2/6 ">
+                  <label className="font-inter py-1  text-sm text-gray-700 leading-5 font-medium">
                     Name
                   </label>
-                  <div className="  flex items-start border w-full  outline-none text-left border-gray-300 rounded-md p-2 gap-4">
-                    <img src={pmAvatar} alt="pmAvatar" />
-                    <div>
+                  <div
+                    className=" 
+                  flex items-start border  outline-none 
+                  text-left border-gray-300
+                   rounded-md "
+                  >
+                    <img className="p-2" src={pmAvatar} alt="pmAvatar" />
+                    <div className=" py-2.5 ml-2">
                       <p className="text-base leading-6 font-semibold text-gray-900 font-inter">
                         Blake Alexander
                       </p>
@@ -57,38 +62,79 @@ const Modal = (props) => {
                     </div>
                   </div>
                 </div>
-                <div className="date flex-col">
-                  <label class="text-sm text-gray-700 leading-5 font-medium">
+                <div className="  w-1/6   ">
+                  <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
                     Start Date
                   </label>
-                  <div className="flex">
+                  <div className="flex   ">
                     <input
                       placeholder=""
                       type="date"
-                      class="border w-full  outline-none text-left placeholder:mr-3 border-gray-300 p-1 h-16 placeholder-opacity-0 rounded-md text-sm leading-5 font-normal"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-12"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
                     />
                   </div>
                 </div>
-                <div className="date flex-col">
-                  <label class="text-sm text-gray-700 leading-5 font-medium">
+                <div className="  w-1/6   ">
+                  <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
                     End Date
                   </label>
-                  <div className="flex">
+                  <div className="flex   ">
                     <input
                       placeholder=""
                       type="date"
-                      class="border w-full  outline-none text-left placeholder:mr-3 border-gray-300 p-1 h-16 rounded-md placeholder-opacity-0 text-sm leading-5 font-normal"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-29"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
                     />
                   </div>
                 </div>
-                <div className="estimation flex-col">
-                  <label class="text-sm text-gray-700 leading-5 font-medium">
+
+                <div className="">
+                  <label class="text-sm font-inter w-full text-gray-700 leading-5 font-medium py-1 ">
                     Allocation (%)
                   </label>
-                  <div className="flex">
+                  <div className=" flex">
                     <input
                       placeholder=""
-                      class="border w-full  outline-none text-left placeholder:mr-3 border-gray-300 p-2 rounded-md h-16 placeholder-opacity-0 text-sm leading-5 font-normal text-right"
+                      value="40"
+                      className="border
+                      w-[86px] 
+             
+                      text-right
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
                     />
                   </div>
                 </div>
@@ -99,7 +145,216 @@ const Modal = (props) => {
                   <img src={deleteIcon} alt="delete" />
                 </div>
               </div>
+              {/* //col2 */}
+              <div className="flex py-3 gap-5  items-center  justify-between">
+                <div className=" w-2/6  py-1 ">
+                  {/* <label className="font-inter  text-sm text-gray-700 leading-5 font-medium">
+                    Name
+                  </label> */}
+                  <div
+                    className=" 
+                  flex items-start border  outline-none 
+                  text-left border-gray-300
+                   rounded-md "
+                  >
+                    <img className="p-2" src={pmAvatar} alt="pmAvatar" />
+                    <div className=" py-2.5 ml-2">
+                      <p className="text-base leading-6 font-semibold text-gray-900 font-inter">
+                        Blake Alexander
+                      </p>
+                      <p className="text-sm leading-5 font-medium text-gray-700  font-inter">
+                        Project Manager
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="  w-1/6  py-1  ">
+                  {/* <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
+                    Start Date
+                  </label> */}
+                  <div className="flex   ">
+                    <input
+                      placeholder=""
+                      type="date"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-12"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
+                <div className="  w-1/6  py-1  ">
+                  {/* <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
+                    End Date
+                  </label> */}
+                  <div className="flex   ">
+                    <input
+                      placeholder=""
+                      type="date"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-20"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
 
+                <div className="   ">
+                  <label class="text-sm font-inter w-full text-gray-700 leading-5 font-medium py-1 ">
+                    {/* Allocation (%) */}
+                  </label>
+                  <div className=" flex">
+                    <input
+                      placeholder=""
+                      value="40"
+                      className="border
+                      w-[86px] 
+                      text-right
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
+                <div className="  flex-col">
+                  {/* <label class="text-sm text-gray-700 leading-5 font-medium">
+                    &nbsp;
+                  </label> */}
+                  <img src={deleteIcon} alt="delete" />
+                </div>
+              </div>
+              {/* //col3 */}
+              <div className="flex   items-center  justify-between">
+                <div className=" w-2/6  py-1 ">
+                  {/* <label className="font-inter  text-sm text-gray-700 leading-5 font-medium">
+                    Name
+                  </label> */}
+                  <div
+                    className=" 
+                  flex items-start border  outline-none 
+                  text-left border-gray-300
+                   rounded-md "
+                  >
+                    <img className="p-2" src={pmAvatar} alt="pmAvatar" />
+                    <div className=" py-2.5 ml-2">
+                      <p className="text-base leading-6 font-semibold text-gray-900 font-inter">
+                        Blake Alexander
+                      </p>
+                      <p className="text-sm leading-5 font-medium text-gray-700  font-inter">
+                        Project Manager
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="  w-1/6  py-1  ">
+                  {/* <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
+                    Start Date
+                  </label> */}
+                  <div className="flex   ">
+                    <input
+                      placeholder=""
+                      type="date"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-12"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
+                <div className="  w-1/6  py-1  ">
+                  {/* <label class="text-sm font-inter text-gray-700 leading-5 font-medium py-1 ">
+                    End Date
+                  </label> */}
+                  <div className="flex   ">
+                    <input
+                      placeholder=""
+                      type="date"
+                      data-date=""
+                      data-date-format="DD MMMM YYYY"
+                      value="2022-12-25"
+                      className="border
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
+
+                <div className="   ">
+                  <label class="text-sm font-inter w-full text-gray-700 leading-5 font-medium py-1 ">
+                    {/* Allocation (%) */}
+                  </label>
+                  <div className=" flex">
+                    <input
+                      placeholder=""
+                      value="40"
+                      className="border
+                      w-[86px] 
+                      text-right
+                        outline-none
+                      border-gray-300 
+                      rounded-md
+                        text-sm 
+                        leading-5 
+                        font-normal
+                        font-inter
+                        py-5
+                        px-2
+                        "
+                    />
+                  </div>
+                </div>
+                <div className="  flex-col">
+                  {/* <label class="text-sm text-gray-700 leading-5 font-medium">
+                    &nbsp;
+                  </label> */}
+                  <img src={deleteIcon} alt="delete" />
+                </div>
+              </div>
               <button
                 type="button"
                 className="border bg-white gap-2 flex my-6 px-4 py-2.5 shadow-sm rounded-md"
